@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download 15 Years Anniversary Mod for Opera GX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .description {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download 15 Years Anniversary Mod for Opera GX</h1>
+        <p class="description">Download the special mod celebrating 15 years of Opera GX right here.</p>
+        <button class="download-button" id="downloadButton">Download Mod</button>
+
+        <script>
+            document.getElementById('downloadButton').addEventListener('click', function() {
+                var fileUrl = 'gx_mod/minecraft_theme.crx'; // Adjust the path to your file
+
+                var a = document.createElement('a');
+                a.href = fileUrl;
+                a.download = fileUrl.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        </script>
+    </div>
+</body>
+</html>
